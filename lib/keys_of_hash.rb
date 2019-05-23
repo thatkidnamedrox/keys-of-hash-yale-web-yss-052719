@@ -14,7 +14,7 @@ class Hash
       selection = self.select {|k,v| v == arg}
       puts selection.inspect
     end
-    #puts keys
+    puts selection.keys.inspect
     selection.keys
 
   end
