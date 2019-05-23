@@ -8,10 +8,10 @@ class Hash
       args = arguments
     end
     #puts args.inspect
-    selection = {}
+    selection = nil
     args.each do |arg|
       puts arg
-      if selection
+      # if selection
       selection = self.select {|k,v| v == arg}
       #puts selection.inspect
       puts selection.keys.inspect
