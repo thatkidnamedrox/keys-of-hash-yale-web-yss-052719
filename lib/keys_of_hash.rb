@@ -15,7 +15,7 @@ class Hash
       puts selection.inspect
     end
     #puts keys
-    keys = selection.keys
+    selection.keys
 
   end
 end
