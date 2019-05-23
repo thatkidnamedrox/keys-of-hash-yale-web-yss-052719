@@ -12,7 +12,7 @@ class Hash
     args.each do |arg|
       puts arg
       selection = self.select {|k,v| v == arg}
-      puts selection.inspect
+      #puts selection.inspect
     end
     puts selection.keys.inspect
     selection.keys
