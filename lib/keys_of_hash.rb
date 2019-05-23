@@ -7,18 +7,13 @@ class Hash
     else
       args = arguments
     end
-    #puts args.inspect
-    selection = {}
-    args.each do |arg|
-      puts arg
-      # if selection
-      a = self.select {|k,v| v == arg}
-      selection = selection.merge(a)
-      #puts selection.inspect
-      puts selection.keys.inspect
-    end
 
-    selection.keys
+    result = {}
+    args.each do |arg|
+      selection = self.select {|k,v| v == arg}
+      result = result.merge(selection)
+    end
+    result.keys
 
   end
 end
